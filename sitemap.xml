@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/posts/first_post/</loc><lastmod>2022-02-14T22:22:20&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/</loc><lastmod>2022-02-14T22:22:20&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2022-02-14T22:22:20&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/categories/</loc></url><url>
-            <loc>http://example.org/tags/</loc></url></urlset>
+            <loc>http://www.kumarnitish.com/posts/first_post/</loc><lastmod>2022-02-14T22:22:20&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/</loc><lastmod>2022-02-14T22:22:20&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/posts/</loc><lastmod>2022-02-14T22:22:20&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/categories/</loc></url><url>
+            <loc>http://www.kumarnitish.com/tags/</loc></url></urlset>
