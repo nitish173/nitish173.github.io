@@ -3,7 +3,42 @@
         <title>Tags - Tag - Nitish Kumar</title>
         <link>http://www.kumarnitish.com/tags/</link>
         <description>Tags - Tag - Nitish Kumar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://www.kumarnitish.com/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 04:36:01 &#43;0530</lastBuildDate><atom:link href="http://www.kumarnitish.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>javascript</title>
+    <link>http://www.kumarnitish.com/tags/javascript/</link>
+    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/javascript/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>npm</title>
+    <link>http://www.kumarnitish.com/tags/npm/</link>
+    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/npm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>package managers</title>
+    <link>http://www.kumarnitish.com/tags/package-managers/</link>
+    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/package-managers/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>pip</title>
+    <link>http://www.kumarnitish.com/tags/pip/</link>
+    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/pip/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>python</title>
+    <link>http://www.kumarnitish.com/tags/python/</link>
+    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/python/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>android</title>
     <link>http://www.kumarnitish.com/tags/android/</link>
     <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
@@ -16,13 +51,6 @@
     <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/apk/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>javascript</title>
-    <link>http://www.kumarnitish.com/tags/javascript/</link>
-    <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>http://www.kumarnitish.com/tags/javascript/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>react-native</title>

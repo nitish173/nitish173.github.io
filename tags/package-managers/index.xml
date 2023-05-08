@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>package managers - Tag - Nitish Kumar</title>
+        <link>http://www.kumarnitish.com/tags/package-managers/</link>
+        <description>package managers - Tag - Nitish Kumar</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 04:36:01 &#43;0530</lastBuildDate><atom:link href="http://www.kumarnitish.com/tags/package-managers/" rel="self" type="application/rss+xml" /><item>
+    <title>Understanding package managers by comparing npm and pip</title>
+    <link>http://www.kumarnitish.com/posts/second_post/</link>
+    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+        <name>Nitish</name>
+    </author><guid>http://www.kumarnitish.com/posts/second_post/</guid>
+    <description><![CDATA[Let&rsquo;s use two of the most popular package managers to undertand the intricacies and subtelities of this tool]]></description>
+</item></channel>
+</rss>
