@@ -3,19 +3,32 @@
         <title>All Posts - Nitish Kumar</title>
         <link>http://www.kumarnitish.com/posts/</link>
         <description>All Posts | Nitish Kumar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 04:36:01 &#43;0530</lastBuildDate><atom:link href="http://www.kumarnitish.com/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Understanding package managers by comparing npm and pip</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 23:21:18 &#43;0530</lastBuildDate><atom:link href="http://www.kumarnitish.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>A dive into browser caches</title>
+    <link>http://www.kumarnitish.com/posts/browser_caches/</link>
+    <pubDate>Tue, 09 May 2023 23:21:18 &#43;0530</pubDate><author>
+        <name>Nitish</name>
+    </author><guid>http://www.kumarnitish.com/posts/browser_caches/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cache.jpg" referrerpolicy="no-referrer">
+            </div>We keep hearing about different types of browser caches: service workers, memory cache, blink, etc. Let&rsquo;s take a more detailed look into how caching works, their types and how can we profit.]]></description>
+</item><item>
+    <title>A quick note on package managers</title>
     <link>http://www.kumarnitish.com/posts/second_post/</link>
-    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+    <pubDate>Fri, 20 Jan 2023 04:36:01 &#43;0530</pubDate><author>
         <name>Nitish</name>
     </author><guid>http://www.kumarnitish.com/posts/second_post/</guid>
-    <description><![CDATA[Let&rsquo;s use two of the most popular package managers to undertand the intricacies and subtelities of this tool]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/package.jpg" referrerpolicy="no-referrer">
+            </div>Let&rsquo;s look at two of the most popular package managers and undertand the intricacies and subtleties of this tool we often take for granted]]></description>
 </item><item>
     <title>How to generate a debug apk in react-native</title>
     <link>http://www.kumarnitish.com/posts/first_post/</link>
     <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
         <name>Nitish</name>
     </author><guid>http://www.kumarnitish.com/posts/first_post/</guid>
-    <description><![CDATA[Generate a debug apk for your react native app in just 3 simple steps.]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/bot.jpg" referrerpolicy="no-referrer">
+            </div>Generate a debug apk for your react native app in just 3 simple steps.]]></description>
 </item></channel>
 </rss>

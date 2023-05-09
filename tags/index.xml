@@ -3,38 +3,66 @@
         <title>Tags - Tag - Nitish Kumar</title>
         <link>http://www.kumarnitish.com/tags/</link>
         <description>Tags - Tag - Nitish Kumar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 04:36:01 &#43;0530</lastBuildDate><atom:link href="http://www.kumarnitish.com/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 May 2023 23:21:18 &#43;0530</lastBuildDate><atom:link href="http://www.kumarnitish.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>blink</title>
+    <link>http://www.kumarnitish.com/tags/blink/</link>
+    <pubDate>Tue, 09 May 2023 23:21:18 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/blink/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>browsers</title>
+    <link>http://www.kumarnitish.com/tags/browsers/</link>
+    <pubDate>Tue, 09 May 2023 23:21:18 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/browsers/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>cache</title>
+    <link>http://www.kumarnitish.com/tags/cache/</link>
+    <pubDate>Tue, 09 May 2023 23:21:18 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/cache/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>javascript</title>
     <link>http://www.kumarnitish.com/tags/javascript/</link>
-    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+    <pubDate>Tue, 09 May 2023 23:21:18 &#43;0530</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/javascript/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>optimisation</title>
+    <link>http://www.kumarnitish.com/tags/optimisation/</link>
+    <pubDate>Tue, 09 May 2023 23:21:18 &#43;0530</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://www.kumarnitish.com/tags/optimisation/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>npm</title>
     <link>http://www.kumarnitish.com/tags/npm/</link>
-    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+    <pubDate>Fri, 20 Jan 2023 04:36:01 &#43;0530</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/npm/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>package managers</title>
     <link>http://www.kumarnitish.com/tags/package-managers/</link>
-    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+    <pubDate>Fri, 20 Jan 2023 04:36:01 &#43;0530</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/package-managers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>pip</title>
     <link>http://www.kumarnitish.com/tags/pip/</link>
-    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+    <pubDate>Fri, 20 Jan 2023 04:36:01 &#43;0530</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/pip/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>python</title>
     <link>http://www.kumarnitish.com/tags/python/</link>
-    <pubDate>Tue, 09 May 2023 04:36:01 &#43;0530</pubDate><author>
+    <pubDate>Fri, 20 Jan 2023 04:36:01 &#43;0530</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/python/</guid>
     <description><![CDATA[]]></description>
@@ -44,20 +72,6 @@
     <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>http://www.kumarnitish.com/tags/android/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>apk</title>
-    <link>http://www.kumarnitish.com/tags/apk/</link>
-    <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>http://www.kumarnitish.com/tags/apk/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>react-native</title>
-    <link>http://www.kumarnitish.com/tags/react-native/</link>
-    <pubDate>Fri, 05 Jun 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>http://www.kumarnitish.com/tags/react-native/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

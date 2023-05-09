@@ -2,18 +2,25 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://www.kumarnitish.com/tags/javascript/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/tags/npm/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/tags/package-managers/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/tags/pip/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/posts/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/tags/python/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/tags/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/posts/second_post/</loc><lastmod>2023-05-09T04:36:01&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/posts/browser_caches/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/blink/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/browsers/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/cache/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/javascript/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/optimisation/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/posts/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/</loc><lastmod>2023-05-09T23:21:18&#43;05:30</lastmod></url><url>
             <loc>http://www.kumarnitish.com/about/</loc><lastmod>2023-02-12T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/posts/second_post/</loc><lastmod>2023-01-20T04:36:01&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/npm/</loc><lastmod>2023-01-20T04:36:01&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/package-managers/</loc><lastmod>2023-01-20T04:36:01&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/pip/</loc><lastmod>2023-01-20T04:36:01&#43;05:30</lastmod></url><url>
+            <loc>http://www.kumarnitish.com/tags/python/</loc><lastmod>2023-01-20T04:36:01&#43;05:30</lastmod></url><url>
             <loc>http://www.kumarnitish.com/tags/android/</loc><lastmod>2020-06-05T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://www.kumarnitish.com/tags/apk/</loc><lastmod>2020-06-05T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://www.kumarnitish.com/posts/first_post/</loc><lastmod>2020-06-05T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://www.kumarnitish.com/tags/react-native/</loc><lastmod>2020-06-05T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>http://www.kumarnitish.com/categories/</loc></url></urlset>
+            <loc>http://www.kumarnitish.com/authors/</loc></url><url>
+            <loc>http://www.kumarnitish.com/categories/</loc></url><url>
+            <loc>http://www.kumarnitish.com/offline/</loc></url></urlset>

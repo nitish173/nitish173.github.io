@@ -5,36 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title class="pjax-title">Understanding package managers by comparing npm and pip - Nitish Kumar</title><meta name="Description" content="Articles, opinions, miscellanea by Nitish"><meta property="og:title" content="Understanding package managers by comparing npm and pip" />
-<meta property="og:description" content="Let&rsquo;s use two of the most popular package managers to undertand the intricacies and subtelities of this tool" />
+    <title class="pjax-title">A quick note on package managers - Nitish Kumar</title><meta name="Description" content="Articles, opinions, miscellanea by Nitish"><meta property="og:title" content="A quick note on package managers" />
+<meta property="og:description" content="Let&rsquo;s look at two of the most popular package managers and undertand the intricacies and subtleties of this tool we often take for granted" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.kumarnitish.com/posts/second_post/" /><meta property="og:image" content="http://www.kumarnitish.com/img/nitish_logos.jpeg"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-09T04:36:01+05:30" />
-<meta property="article:modified_time" content="2023-05-09T04:36:01+05:30" /><meta property="og:site_name" content="Nitish Kumar" />
+<meta property="article:published_time" content="2023-01-20T04:36:01+05:30" />
+<meta property="article:modified_time" content="2023-01-20T04:36:01+05:30" /><meta property="og:site_name" content="Nitish Kumar" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://www.kumarnitish.com/img/nitish_logos.jpeg"/>
 
-<meta name="twitter:title" content="Understanding package managers by comparing npm and pip"/>
-<meta name="twitter:description" content="Let&rsquo;s use two of the most popular package managers to undertand the intricacies and subtelities of this tool"/>
+<meta name="twitter:title" content="A quick note on package managers"/>
+<meta name="twitter:description" content="Let&rsquo;s look at two of the most popular package managers and undertand the intricacies and subtleties of this tool we often take for granted"/>
 <meta name="application-name" content="Nitish Kumar">
 <meta name="apple-mobile-web-app-title" content="Nitish Kumar">
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="http://www.kumarnitish.com/posts/second_post/" /><link rel="prev" href="http://www.kumarnitish.com/posts/first_post/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="http://www.kumarnitish.com/posts/second_post/" /><link rel="prev" href="http://www.kumarnitish.com/posts/first_post/" /><link rel="next" href="http://www.kumarnitish.com/posts/browser_caches/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Understanding package managers by comparing npm and pip",
+        "headline": "A quick note on package managers",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/www.kumarnitish.com\/posts\/second_post\/"
-        },"genre": "posts","keywords": "npm, pip, package managers, python, javascript","wordcount":  1125 ,
-        "url": "http:\/\/www.kumarnitish.com\/posts\/second_post\/","datePublished": "2023-05-09T04:36:01+05:30","dateModified": "2023-05-09T04:36:01+05:30","publisher": {
+        },"genre": "posts","keywords": "npm, pip, package managers, python, javascript","wordcount":  547 ,
+        "url": "http:\/\/www.kumarnitish.com\/posts\/second_post\/","datePublished": "2023-01-20T04:36:01+05:30","dateModified": "2023-01-20T04:36:01+05:30","publisher": {
             "@type": "Organization",
             "name": "Nitish"},"author": {
                 "@type": "Person",
@@ -85,91 +85,59 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Understanding package managers by comparing npm and pip</h1><div class="post-meta">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">A quick note on package managers</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">Nitish</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-09">2023-05-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-05-09">2023-05-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1125 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
-        </div><div class="content" id="content"><h2 id="quick-intro-maybe" class="headerLink">
-    <a href="#quick-intro-maybe" class="header-mark"></a>Quick intro maybe..</h2><p>A package manager is a software tool that automates the process of installing and managing software dependencies. Common examples includes npm for Node.js, pip for Python, and apt for Debian-based Linux distributions.</p>
-<h2 id="dive-in-a-bit-more" class="headerLink">
-    <a href="#dive-in-a-bit-more" class="header-mark"></a>Dive in a bit more?</h2><ul>
-<li>While different package managers differ in terms of syntax and configurations, they pretty much follow the same workflow:</li>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-01-20">2023-01-20</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-01-20">2023-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;547 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        data-src="/posts/second_post/package.jpg"
+        data-srcset="/posts/second_post/package.jpg, /posts/second_post/package.jpg 1.5x, /posts/second_post/package.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/second_post/package.jpg"
+        title="/posts/second_post/package.jpg" height="3744" width="5616"></div><div class="content" id="content"><h2 id="quick-introduction" class="headerLink">
+    <a href="#quick-introduction" class="header-mark"></a>Quick introduction</h2><p>A package manager is a software tool that automates the process of installing and managing software dependencies. Common examples include:</p>
+<ul>
+<li><strong>npm</strong> for Node.js</li>
+<li><strong>pip</strong> for Python</li>
+<li><strong>apt</strong> for Debian-based Linux distributions</li>
 </ul>
+<p>While different package managers differ in terms of syntax and configurations, they pretty much follow the same workflow:</p>
 <ol>
-<li>
-<p>Define dependencies: Developers define the dependencies required for their project in a configuration file.</p>
-</li>
-<li>
-<p>Install dependencies: The package manager automatically downloads and installs the required dependencies, including any additional packages needed to satisfy dependencies.</p>
-</li>
-<li>
-<p>Manage dependencies: Developers can use the package manager to update, remove, or add new dependencies to their project.</p>
-</li>
-<li>
-<p>Dependency resolution: The package manager ensures that all dependencies are compatible with each other and are installed in a specific order to avoid any conflicts.</p>
-</li>
+<li>Define dependencies: Developers define the dependencies required for their project in a configuration file.</li>
+<li>Install dependencies: The package manager automatically downloads and installs the required dependencies, including any additional packages needed to satisfy dependencies.</li>
+<li>Manage dependencies: Developers can use the package manager to update, remove, or add new dependencies to their project.</li>
+<li>Dependency resolution: The package manager ensures that all dependencies are compatible with each other and are installed in a specific order to avoid any conflicts.</li>
 </ol>
 <p>Choosing the appropriate package manager for your project is crucial as it plays an essential role in modern software development, which can significantly impact productivity and efficiency.</p>
-<h2 id="okay-ive-been-using-them-for-long-and-i-understand-it-whats-more-to-notice" class="headerLink">
-    <a href="#okay-ive-been-using-them-for-long-and-i-understand-it-whats-more-to-notice" class="header-mark"></a>Okay, I&rsquo;ve been using them for long, and I understand it. What&rsquo;s more to notice?</h2><ul>
-<li>We&rsquo;ll talk about <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreffer">npm</a> for Node and <a href="https://pypi.org/project/pip/" target="_blank" rel="noopener noreffer">pip</a> for Python here and limit our discussion to these two. Through comparison, we&rsquo;ll understand some of the subtle things we may have overlooked in the past:</li>
+<h2 id="comparison-of-npm-and-pip" class="headerLink">
+    <a href="#comparison-of-npm-and-pip" class="header-mark"></a>Comparison of npm and pip</h2><p>We&rsquo;ll talk about <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreffer">npm</a> for Node.js and <a href="https://pypi.org/project/pip/" target="_blank" rel="noopener noreffer">pip</a> for Python here and limit our discussion to these two. Through comparison, we&rsquo;ll understand some of the subtle things we may have overlooked in the past:</p>
+<h3 id="dependency-configuration" class="headerLink">
+    <a href="#dependency-configuration" class="header-mark"></a>Dependency Configuration</h3><ul>
+<li>Node.js uses a <strong>package.json</strong> file to define dependencies, while Python uses a <strong>requirements.txt</strong> file.</li>
+<li>The configuration data format could be anything specific to the ecosystem, for example, XML or YAML.</li>
 </ul>
-<ol>
-<li><strong>How do we define dependencies in both (configuration)</strong>:</li>
-</ol>
-<ul>
-<li>Node user <code>package.json</code> file, while Python uses <code>requuirements.txt</code> file: Basically, configuration data format could be anything specific to the ecosystem(think of other languages/formats: xml, etc. )</li>
+<h3 id="dependency-resolution" class="headerLink">
+    <a href="#dependency-resolution" class="header-mark"></a>Dependency Resolution</h3><ul>
+<li>In Node.js, packages are versioned using Semantic Versioning or <strong>SemVer</strong> for short.</li>
+<li><strong>SemVer</strong> defines a set of rules for how version numbers should be assigned and incremented, based on a three-part numbering system: <strong>major.minor.patch</strong>.</li>
+<li>To specify dependencies in a Node.js project, you can use the <strong>package.json</strong> file, which lists all the dependencies of the project along with their version numbers.</li>
+<li>Before updating, it&rsquo;s a good practice to &ldquo;freeze&rdquo; the versions of all dependencies, which locks the versions to the specific ones listed in <strong>package-lock.json</strong>.</li>
+<li>In Python, packages can be versioned using either exact version numbers or version ranges.</li>
+<li>To specify dependencies in a Python project, you can use the <strong>requirements.txt</strong> file, which lists all the project&rsquo;s dependencies along with their version numbers or version ranges.</li>
+<li>Before updating, it&rsquo;s a good practice to &ldquo;freeze&rdquo; the versions of all dependencies by running <code>pip freeze &gt; requirements.txt</code>.</li>
 </ul>
-<ol start="2">
-<li><strong>Dependency resolution</strong></li>
-</ol>
-<ul>
-<li>
-<p>In Node.js, packages are versioned using Semantic Versioning, or <strong>SemVer</strong> for short. SemVer defines a set of rules for how version numbers should be assigned and incremented, based on a three-part numbering system: <strong>major.minor.patch</strong>. The major version number should be incremented when there are significant changes that may break compatibility with older versions, the minor version number should be incremented when new features are added in a backward-compatible manner, and the patch version number should be incremented for bug fixes and other minor changes.</p>
-</li>
-<li>
-<p>When specifying dependencies in a Node.js project, you can specify exact versions using the <strong>package.json</strong> file, which lists all the dependencies of the project along with their version numbers. This file can be committed to version control, ensuring that every developer working on the project uses the same set of dependencies.</p>
-</li>
-<li>
-<p>To update a package in a Node.js project, you can use the <code>npm update</code> command. This will update all the packages in the project to their latest compatible versions, as determined by the version ranges specified in <strong>package.json</strong>. If you want to update a specific package to a newer version, you can run <code>npm update package_name</code>.</p>
-</li>
-<li>
-<p>Before updating, it&rsquo;s a good practice to &ldquo;freeze&rdquo; the versions of all dependencies, which locks the versions to the specific ones listed in <strong>package-lock.json</strong>. This file is automatically generated by npm and specifies the exact versions of all dependencies, including their transitive dependencies. It should be committed to version control along with <strong>package.json</strong> to ensure that everyone working on the project uses the same set of dependencies.</p>
-</li>
-<li>
-<p>In Python, packages can be versioned using either exact version numbers or version ranges. To specify an exact version number for a package, you can use the <code>package_name==version</code> syntax in a <strong>requirements.txt</strong> file, which lists all the project&rsquo;s dependencies along with their version numbers. To specify a range of acceptable versions, you can use operators such as <code>&gt;=</code> or <code>&lt;=</code>.</p>
-</li>
-<li>
-<p>To update a package in a Python project, you can use the <code>pip install --upgrade</code> command, followed by the name of the package you want to update. This will update the specified package to the latest version compatible with the version range specified in <strong>requirements.txt</strong>. To update all packages in the project, you can use the <code>pip freeze &gt; requirements.txt</code> command to generate an updated <strong>requirements.txt</strong> file, which specifies the latest compatible versions of all dependencies.</p>
-</li>
-<li>
-<p>Before updating, it&rsquo;s a good practice to &ldquo;freeze&rdquo; the versions of all dependencies by running <code>pip freeze &gt; requirements.txt</code>. This generates a <strong>requirements.txt</strong> file that lists all the project&rsquo;s dependencies along with their exact version numbers. This file can be committed to version control to ensure that everyone working on the project uses the same set of dependencies.</p>
-</li>
+<h3 id="dependency-isolation" class="headerLink">
+    <a href="#dependency-isolation" class="header-mark"></a>Dependency Isolation</h3><ul>
+<li>The goal is to manage dependencies in a software project in a way that ensures they are separate and isolated from each other, as well as from the system&rsquo;s dependencies.</li>
+<li>This helps to prevent conflicts between dependencies, and ensures that the project can be easily reproduced on different systems.</li>
+<li>In Node.js, <code>package-lock.json</code> is used to lock down exact package versions and prevent updates to dependencies without explicit approval.</li>
+<li>In Python, <strong>virtual environments</strong> can be used to create sandboxed environments for each project, with its own set of dependencies.</li>
 </ul>
 <p>To summarize, in order to update packages in both Node.js and Python projects, it is crucial to &ldquo;freeze&rdquo; the versions of all dependencies by generating a lock file (i.e., <strong>package-lock.json</strong> for Node.js or <strong>requirements.txt</strong> for Python) that lists the exact versions of all dependencies. These lock files should be committed to version control along with the corresponding <strong>package.json</strong> or <strong>setup.py</strong> file, respectively, to ensure that everyone working on the project uses the same set of dependencies.</p>
-<ol start="3">
-<li><strong>Dependency Isolation</strong> :</li>
-</ol>
-<ul>
-<li>The goal is to manage dependencies in a software project in a way that ensures they are separate and isolated from each other, as well as from the system&rsquo;s dependencies. This helps to prevent conflicts between dependencies, and ensures that the project can be easily reproduced on different systems.</li>
-</ul>
-<p>In practical terms, dependency isolation involves creating a separate environment for each project, with its own set of dependencies. This is achieved using tools like package managers or virtual environments, which create a sandboxed environment in which the project can run without affecting other projects or the system as a whole.</p>
-<ul>
-<li>
-<p>In Node.js, <code>package-lock.json</code> is used to lock down exact package versions and prevent updates to dependencies without explicit approval. This ensures that all developers on a project are working with the same set of dependencies. In addition, Node.js supports multiple versions of the same package by using separate peer dependencies. This allows projects to use different versions of a package without causing conflicts.</p>
-</li>
-<li>
-<p>Python, on the other hand, uses <code>virtual environments</code> to isolate project dependencies from the system&rsquo;s Python installation and other projects. This allows multiple projects with different dependencies to run on the same system. Python also supports multiple versions of the same package by installing each version into its own virtual environment.</p>
-</li>
-<li>
-<p>Despite the measures taken to ensure dependency isolation, conflicts can still arise between dependencies due to peer dependencies. Node.js handles these conflicts by prioritizing the version specified by the direct dependency over the peer dependency. Python, on the other hand, handles these conflicts by using a package resolution algorithm that takes into account the version specified by the direct dependency as well as the requirements of other dependencies.</p>
-</li>
-</ul>
-<p>It&rsquo;s important to follow best practices such as freezing the versions of all dependencies, keeping dependencies up to date, and using tools like npm-check or pip-tools to manage dependencies.</p>
 <hr>
-<p>I hope this discussion has provided you with some valuable insights into the differences between npm and pip, as well as their respective package management strategies.</p>
 <p>That is it for now, thanks for giving it a read.</p>
 </div>
 
@@ -177,7 +145,7 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2023-05-09</span>
+                <span>Updated on 2023-01-20</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -196,12 +164,13 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/first_post/" class="prev" rel="prev" title="How to generate a debug apk in react-native"><i class="fas fa-angle-left fa-fw"></i>How to generate a debug apk in react-native</a></div>
+    <div class="post-nav"><a href="/posts/first_post/" class="prev" rel="prev" title="How to generate a debug apk in react-native"><i class="fas fa-angle-left fa-fw"></i>How to generate a debug apk in react-native</a>
+            <a href="/posts/browser_caches/" class="next" rel="next" title="A dive into browser caches">A dive into browser caches<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer"></a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
