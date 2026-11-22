@@ -15,6 +15,8 @@ export const SKILL_CHIPS = [
   "Security & Compliance",
   "Technical Leadership",
   "0 → 1 Delivery",
+  "Applied AI",
+  "Agentic AI",
   "Mentoring",
 ];
 
@@ -38,4 +40,7 @@ export const KNOWS_ABOUT = [
   "Puppeteer",
   "Design Systems",
   "Frontend Architecture",
+  "LLM Applications",
+  "Agentic AI",
+  "RAG",
 ];

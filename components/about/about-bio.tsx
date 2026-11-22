@@ -41,6 +41,21 @@ export const AboutBio: FC = () => {
         while mentoring engineers and setting the standards teams still work to.
       </p>
 
+      <div className="mt-6 rounded-2xl border border-coral/25 bg-coral/[0.06] p-5">
+        <p className="flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-coral">
+          <span className="h-1.5 w-1.5 rounded-full bg-coral" aria-hidden />
+          Currently exploring
+        </p>
+        <p className="mt-3 leading-relaxed text-neutral-300">
+          I&apos;m moving into applied AI: I built an internal analyst agent that
+          lets the credit team ask questions across product behaviour, live
+          issues and customer support. I&apos;m learning agentic systems, RAG and
+          evaluation patterns by building rather than reading — I pick up new
+          stacks quickly, and I&apos;d rather lead the way into them than wait
+          for a playbook.
+        </p>
+      </div>
+
       <div className="mt-8 flex flex-wrap gap-3">
         <a href="#contact" className="btn-primary">
           <span>Start a conversation</span>
