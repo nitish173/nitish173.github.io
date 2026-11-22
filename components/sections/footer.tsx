@@ -41,8 +41,8 @@ export const Footer: FC = () => {
             <span>{HERO_NAME}</span>
           </div>
           <p className="mt-3 text-sm text-neutral-400 max-w-sm">
-            Building frontend platforms for trading and credit products. Reach
-            out at{" "}
+            Trading, credit and post-trade platforms — React, Python and AWS.
+            Say hi at{" "}
             <a
               href={`mailto:${CONTACT_EMAIL}`}
               className="text-white hover:text-coral transition-colors"

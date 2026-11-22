@@ -30,7 +30,7 @@ export const Navbar: FC = () => {
         <div className="flex items-center justify-between py-3">
           <NavBrand />
 
-          <nav className="hidden sm:flex">
+          <nav className="hidden sm:flex" aria-label="Primary">
             <ul className="nav-ul">
               {NAV_ITEMS.map((item) => (
                 <NavLink

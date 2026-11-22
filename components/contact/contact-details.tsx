@@ -18,14 +18,14 @@ const EMAIL_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
 export const ContactDetails: FC = () => (
   <motion.div {...revealProps()} className="mx-auto max-w-5xl">
     <div className="mx-auto max-w-2xl text-center">
-      <p className="text-eyebrow">Let&apos;s Talk</p>
+      <p className="text-eyebrow">say hi</p>
       <h2 className="text-heading mt-3">
-        Have an idea? <br />
+        Got a messy problem? <br />
         <span className="text-gradient">Let&apos;s ship it.</span>
       </h2>
       <p className="mt-4 leading-relaxed text-neutral-400">
-        No forms, no funnels — just email. Whether you&apos;re hiring, shaping a
-        frontend platform, or building something in trading and credit, write
+        No forms, no funnels — just email. Whether you&apos;re hiring, untangling
+        a frontend platform, or building something in trading and credit, write
         to me directly.
       </p>
 

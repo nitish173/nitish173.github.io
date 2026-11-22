@@ -26,7 +26,7 @@ export const NavLink: FC<NavLinkProps> = ({
         href={href}
         onClick={handleClick}
         aria-current={active ? "page" : undefined}
-        className={`nav-link relative ${active ? "text-white" : ""}`}
+        className={`nav-link relative font-mono ${active ? "text-white" : ""}`}
       >
         {label}
         {active && (

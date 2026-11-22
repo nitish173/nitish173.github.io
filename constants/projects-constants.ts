@@ -20,10 +20,10 @@ export const MY_PROJECTS: Project[] = [
     image: "",
     accent: "from-aqua/40 to-royal/10",
     tags: [
-      { id: 1, name: "TypeScript" },
-      { id: 2, name: "React" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Design Systems" },
+      { id: 1, name: "React" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "UX" },
+      { id: 4, name: "Architecture" },
     ],
   },
   {
@@ -92,8 +92,8 @@ export const MY_PROJECTS: Project[] = [
     tags: [
       { id: 1, name: "React Native" },
       { id: 2, name: "TypeScript" },
-      { id: 3, name: "Mobile" },
-      { id: 4, name: "UI Platform" },
+      { id: 3, name: "UX" },
+      { id: 4, name: "Mobile" },
     ],
   },
   {
@@ -115,8 +115,9 @@ export const MY_PROJECTS: Project[] = [
     tags: [
       { id: 1, name: "React" },
       { id: 2, name: "TypeScript" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "Automation" },
+      { id: 3, name: "Python" },
+      { id: 4, name: "AWS" },
+      { id: 5, name: "Automation" },
     ],
   },
 ];

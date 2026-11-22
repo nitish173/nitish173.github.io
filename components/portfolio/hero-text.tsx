@@ -25,7 +25,7 @@ export const HeroText: FC = () => {
             <span className="relative rounded-full bg-mint h-2 w-2" />
           </span>
           <span className="text-xs tracking-[0.25em] uppercase text-neutral-300">
-            Open to new opportunities
+            Open to new problems
           </span>
         </div>
 
@@ -79,7 +79,7 @@ export const HeroText: FC = () => {
             <span className="relative rounded-full bg-mint h-2 w-2" />
           </span>
           <span className="text-[10px] tracking-[0.25em] uppercase text-neutral-300">
-            Open to new work
+            Open to new problems
           </span>
         </div>
 

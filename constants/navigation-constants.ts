@@ -1,9 +1,9 @@
 export const NAV_ITEMS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "home", href: "#home" },
+  { label: "whoami", href: "#about" },
+  { label: "what i do", href: "#services" },
+  { label: "ship log", href: "#work" },
+  { label: "say hi", href: "#contact" },
 ] as const;
 
 export const NAV_OFFSET = 72;

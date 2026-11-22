@@ -5,6 +5,7 @@ export const SKILL_CHIPS = [
   "Frontend Architecture",
   "Backend Services",
   "UI Engineering",
+  "UX & Interaction",
   "Design Systems",
   "API Design",
   "Platform Engineering",
@@ -15,8 +16,7 @@ export const SKILL_CHIPS = [
   "Security & Compliance",
   "Technical Leadership",
   "0 → 1 Delivery",
-  "Applied AI",
-  "Agentic AI",
+  "AI-augmented Workflows",
   "Mentoring",
 ];
 
@@ -28,7 +28,6 @@ export const KNOWS_ABOUT = [
   "React",
   "React Native",
   "Next.js",
-  "GraphQL",
   "Node.js",
   "Electron",
   "HTML",
@@ -40,7 +39,7 @@ export const KNOWS_ABOUT = [
   "Puppeteer",
   "Design Systems",
   "Frontend Architecture",
+  "UX Design",
   "LLM Applications",
-  "Agentic AI",
   "RAG",
 ];

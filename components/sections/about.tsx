@@ -37,11 +37,11 @@ export const About: FC = () => {
       </motion.div>
 
       <SectionHeader
-        eyebrow="About"
+        eyebrow="whoami"
         title={
           <>
-            Engineering products that{" "}
-            <span className="text-gradient">people actually use.</span>
+            I build the thing, then{" "}
+            <span className="text-gradient">stay for the rewrites.</span>
           </>
         }
       />

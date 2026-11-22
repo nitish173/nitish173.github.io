@@ -97,7 +97,7 @@ export const Timeline: FC<TimelineProps> = ({ data }) => {
         transition={{ duration: 0.6 }}
         className="text-eyebrow"
       >
-        Experience
+        git log
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
@@ -106,7 +106,7 @@ export const Timeline: FC<TimelineProps> = ({ data }) => {
         transition={{ duration: 0.7, delay: 0.05 }}
         className="text-heading mt-3 max-w-3xl"
       >
-        A track record of <span className="text-gradient">shipping & leading.</span>
+        Nine years of <span className="text-gradient">shipping &amp; leading.</span>
       </motion.h2>
 
       <div ref={ref} className="relative pb-20 mt-8">

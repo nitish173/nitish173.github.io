@@ -38,11 +38,11 @@ export const Services: FC = () => {
 
       <SectionHeader
         className="mb-12"
-        eyebrow={`Services · ${padIndex(SERVICES.length)}`}
+        eyebrow={`what i do · ${padIndex(SERVICES.length)}`}
         title={
           <>
-            What I can build for you,{" "}
-            <span className="text-gradient">end-to-end.</span>
+            Zero to prod,{" "}
+            <span className="text-gradient">without the drama.</span>
           </>
         }
         hint={["Scroll", "Stack"]}

@@ -13,10 +13,10 @@ export const SITE_NAME = `${HERO_NAME} | ${HERO_ROLE}`;
 export const SITE_TITLE = `${HERO_NAME} | ${HERO_ROLE}`;
 
 export const SITE_DESCRIPTION =
-  "Senior Software Engineer at FalconX with 9+ years building fintech platforms for trading, credit and post-trade products — and now applying agentic AI and RAG to internal tooling.";
+  "Senior Software Engineer at FalconX with 9+ years building fintech platforms — trading, credit and post-trade — across React, Python and AWS.";
 
 export const SITE_TAGLINE =
-  "Fintech platforms for trading, credit and post-trade — now applying agentic AI.";
+  "Fintech platforms for trading, credit and post-trade, built end to end.";
 
 export const OG_IMAGE = "/og.jpg";
 export const OG_IMAGE_ALT = `${HERO_NAME}, ${HERO_ROLE} portfolio`;
@@ -42,12 +42,12 @@ export const SITE_KEYWORDS = [
   "Frontend Architect",
   "React Developer",
   "TypeScript Developer",
-  "GraphQL",
+  "Python Developer",
+  "AWS Developer",
   "Fintech Engineer",
   "Trading Platform",
   "Post-Trade Systems",
   "AI Agents",
-  "Agentic AI",
   "RAG",
   "LLM",
   "FalconX",
@@ -60,7 +60,7 @@ export const SITE_KEYWORDS = [
 export const HOME_TITLE = `${HERO_NAME} | ${HERO_ROLE} & Frontend Architect`;
 
 export const HOME_DESCRIPTION =
-  "Senior Software Engineer at FalconX in Bangalore. 9+ years building fintech platforms for trading, credit and post-trade — now building internal AI agents.";
+  "Senior Software Engineer at FalconX in Bangalore. 9+ years building trading, credit and post-trade platforms with React, Python and AWS.";
 
 export const SITE_SECTIONS = [
   {
