@@ -11,6 +11,7 @@ export const ProjectDetails: FC<ProjectDetailsProps> = ({
   subDescription,
   tags,
   href,
+  linkLabel,
   closeModal,
 }) => {
   return (
@@ -75,7 +76,7 @@ export const ProjectDetails: FC<ProjectDetailsProps> = ({
                 rel="noopener noreferrer"
                 className="btn-primary !py-2 !px-4 !text-sm"
               >
-                <span>Visit Live</span>
+                <span>{linkLabel}</span>
                 <span aria-hidden>↗</span>
               </a>
             )}

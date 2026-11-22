@@ -1,16 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useMotionValue } from "motion/react";
 
-export const usePinnedProgress = (total: number) => {
+export const usePinnedProgress = () => {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
   const progress = useMotionValue(0);
 
   useEffect(() => {
     let frame: number | null = null;
-    let lastIndex = -1;
 
     const compute = () => {
       const element = trackRef.current;
@@ -24,17 +22,7 @@ export const usePinnedProgress = (total: number) => {
       }
 
       const scrolled = Math.min(Math.max(-rect.top, 0), scrollable);
-      const ratio = scrolled / scrollable;
-      progress.set(ratio);
-
-      const index = Math.min(
-        total - 1,
-        Math.max(0, Math.round(ratio * (total - 1)))
-      );
-      if (index !== lastIndex) {
-        lastIndex = index;
-        setActiveIndex(index);
-      }
+      progress.set(scrolled / scrollable);
     };
 
     const handleScroll = () => {
@@ -54,7 +42,7 @@ export const usePinnedProgress = (total: number) => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", compute);
     };
-  }, [progress, total]);
+  }, [progress]);
 
-  return { trackRef, progress, activeIndex };
+  return { trackRef, progress };
 };

@@ -1,9 +1,8 @@
 import { HERO_LOCATION, HERO_NAME, HERO_ROLE } from "./hero-constants";
 import { CONTACT_EMAIL, MY_SOCIALS } from "./social-constants";
 
-// TODO: set NEXT_PUBLIC_SITE_URL once the GitHub Pages URL is known.
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://nitish17312.github.io"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://nitish173.github.io"
 ).replace(/\/$/, "");
 
 export const absoluteUrl = (path: string) =>

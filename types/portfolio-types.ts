@@ -1,9 +1,8 @@
-import { type CSSProperties, type HTMLAttributes, type RefObject } from "react";
+import { type HTMLAttributes } from "react";
 
 export interface ProjectTag {
   id: number;
   name: string;
-  path: string;
 }
 
 export interface Project {
@@ -13,6 +12,7 @@ export interface Project {
   description: string;
   subDescription: string[];
   href: string;
+  linkLabel: string;
   logo: string;
   image: string;
   tags: ProjectTag[];
@@ -26,8 +26,7 @@ export interface SocialLink {
 }
 
 export interface Experience {
-  title: string;
-  job: string;
+  company: string;
   date: string;
   contents: string[];
 }

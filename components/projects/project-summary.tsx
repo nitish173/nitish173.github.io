@@ -59,7 +59,7 @@ export const ProjectSummary: FC<ProjectSummaryProps> = ({
         rel="noopener noreferrer"
         className="btn-primary"
       >
-        <span>Visit Live</span>
+        <span>{project.linkLabel}</span>
         <span aria-hidden>↗</span>
       </a>
       <button type="button" onClick={onOpen} className="btn-ghost">

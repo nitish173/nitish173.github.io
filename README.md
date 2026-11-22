@@ -36,11 +36,10 @@ Every string is typed and centralised in `constants/` — edit these files, no c
 | `constants/hero-constants.ts` | Name, role, location, tagline, flip words, the four stat cards |
 | `constants/social-constants.ts` | Email address and social links |
 | `constants/about-constants.ts` | Marquee animation classes and skill chip styling |
-| `constants/skills-constants.ts` | Skill chips in the marquee |
+| `constants/skills-constants.ts` | Scope chips in the marquee (`SKILL_CHIPS`) and structured-data keywords (`KNOWS_ABOUT`) |
 | `constants/services-constants.ts` | The four service cards |
-| `constants/projects-constants.ts` | Pinned case-study showcase and project details modal |
-| `constants/experience-constants.ts` | Experience timeline entries |
-| `constants/contact-constants.ts` | Contact form fields, options and messages |
+| `constants/projects-constants.ts` | Pinned case-study showcase, product links and the details modal |
+| `constants/experience-constants.ts` | Experience timeline — organisations and dates only, no job titles |
 | `constants/seo-constants.ts` | Title, description, keywords, canonical URL, JSON-LD sections |
 | `constants/navigation-constants.ts` | Navbar links |
 
@@ -49,15 +48,15 @@ Two blocks of copy are inline in components rather than constants: the About bio
 
 ### Known placeholders
 
-- `constants/social-constants.ts` — LinkedIn and GitHub URLs are placeholders (`https://www.linkedin.com/`
-  and `https://github.com/`). Replace them.
-- `constants/seo-constants.ts` — `SITE_URL` defaults to `https://nitish17312.github.io`. Override it with
-  `NEXT_PUBLIC_SITE_URL` or edit the fallback.
+- `constants/seo-constants.ts` — `SITE_URL` defaults to `https://nitish173.github.io`. Override it with
+  `NEXT_PUBLIC_SITE_URL`, and set `NEXT_PUBLIC_BASE_PATH` if the site is served from a `/<repo>` path.
 - Testimonials — the template's fictional reviews were removed. `REVIEWS` is empty and the section is
   not rendered; add real quotes and re-enable `<Testimonial />` in `components/portfolio/home-page.tsx`.
-- Project cards have no screenshots, so each preview embeds the live product site in an iframe. Add
-  images under `public/projects/` and set `image` in `constants/projects-constants.ts` to use a
-  screenshot instead.
+- Project previews currently show a designed placeholder rather than a screenshot. The live sites send
+  `X-Frame-Options: SAMEORIGIN`, so they cannot be embedded in an iframe; drop images in
+  `public/projects/` and set `image` in `constants/projects-constants.ts` to fill the panel instead.
+- GST Reconciliation shares ClearTax's landing page (`https://cleartax.in/`) because the product is not
+  publicly listed.
 
 ## Contact
 
@@ -77,7 +76,7 @@ with the official Pages actions.
 
    | Variable | Value |
    | --- | --- |
-   | `NEXT_PUBLIC_SITE_URL` | Final URL, e.g. `https://nitish-kumar.github.io/portfolio` |
+   | `NEXT_PUBLIC_SITE_URL` | Final URL, e.g. `https://nitish173.github.io` or `https://nitish173.github.io/<repo>` |
    | `NEXT_PUBLIC_BASE_PATH` | `/<repo>` **only** for project pages. Leave empty for `<user>.github.io` or a custom domain |
 
 4. Push to `main` and watch the workflow run.

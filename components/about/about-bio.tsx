@@ -27,9 +27,9 @@ export const AboutBio: FC = () => {
       <p className="text-base leading-relaxed text-neutral-300 md:text-lg">
         I&apos;m a Senior Software Engineer with{" "}
         <span className="font-semibold text-white">9+ years</span> of experience
-        building frontend platforms for fintech products. I lead with clean
-        architecture, clear interfaces and a deep care for the people who use
-        what we ship.
+        building fintech platforms end to end — backend services and APIs, UI
+        architecture, design systems. I lead with clean architecture, clear
+        interfaces and a deep care for the people who use what we ship.
       </p>
       <p className="mt-4 leading-relaxed text-neutral-400">
         At <span className="text-white">FalconX</span> since 2021, I led the

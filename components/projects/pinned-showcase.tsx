@@ -4,7 +4,6 @@ import { type FC } from "react";
 import { motion, useSpring, useTransform } from "motion/react";
 import {
   MY_PROJECTS,
-  PREVIEW_WINDOW,
   TRACK_SPRING,
 } from "@/constants/projects-constants";
 import { usePinnedProgress } from "@/hooks/use-pinned-progress";
@@ -13,7 +12,7 @@ import { ProjectPanel } from "./project-panel";
 
 export const PinnedShowcase: FC<ProjectListProps> = ({ onOpen }) => {
   const total = MY_PROJECTS.length;
-  const { trackRef, progress, activeIndex } = usePinnedProgress(total);
+  const { trackRef, progress } = usePinnedProgress();
 
   const x = useSpring(
     useTransform(progress, [0, 1], ["0vw", `-${(total - 1) * 100}vw`]),
@@ -41,7 +40,6 @@ export const PinnedShowcase: FC<ProjectListProps> = ({ onOpen }) => {
               index={index}
               total={total}
               onOpen={() => onOpen(project)}
-              showPreview={Math.abs(index - activeIndex) <= PREVIEW_WINDOW}
             />
           ))}
         </motion.div>

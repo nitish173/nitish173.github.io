@@ -14,7 +14,6 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({
   project,
   index,
   total,
-  showPreview,
 }) => {
   const pointerX = useMotionValue(0.5);
   const pointerY = useMotionValue(0.5);
@@ -60,30 +59,20 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({
           {project.image ? (
             <Image
               src={project.image}
-              alt={`${project.title} homepage`}
+              alt={`${project.title} screenshot`}
               fill
               sizes="(min-width: 1024px) 58vw, 100vw"
               className="pointer-events-none select-none object-cover object-top"
             />
           ) : (
-            showPreview && (
-              <iframe
-                src={project.href}
-                title={project.title}
-                loading="lazy"
-                sandbox="allow-scripts allow-same-origin"
-                referrerPolicy="no-referrer"
-                className="pointer-events-none absolute inset-0 select-none bg-transparent"
-                style={{
-                  width: "180%",
-                  height: "180%",
-                  transform: "scale(0.555)",
-                  transformOrigin: "top left",
-                  border: 0,
-                  colorScheme: "normal",
-                }}
-              />
-            )
+            <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-4 px-10 text-center">
+              <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/[0.06] text-xl text-white/80">
+                ↗
+              </span>
+              <span className="max-w-xs text-[10px] uppercase leading-relaxed tracking-[0.35em] text-white/55">
+                {project.category}
+              </span>
+            </div>
           )}
 
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.06),transparent_45%)]" />
@@ -96,13 +85,7 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({
             <span
               className={`${BADGE} inline-flex items-center gap-2 border-white/25 bg-black/50 text-white`}
             >
-              {!project.image && (
-                <span className="relative flex h-1.5 w-1.5">
-                  <span className="absolute inset-0 animate-ping rounded-full bg-mint opacity-75" />
-                  <span className="relative h-1.5 w-1.5 rounded-full bg-mint" />
-                </span>
-              )}
-              {project.image ? "Preview" : "Live Preview"}
+              {project.image ? "Screenshot" : "Product"}
             </span>
             <span className={`${BADGE} text-white/70`}>
               {formatCounter(index, total)}
@@ -116,7 +99,7 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({
             style={{ transform: "translateZ(80px)" }}
             className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/50 px-4 py-2 text-xs text-white backdrop-blur-md hover:border-white/40"
           >
-            <span>Open Site</span>
+            <span>{project.linkLabel}</span>
             <span aria-hidden>↗</span>
           </a>
 

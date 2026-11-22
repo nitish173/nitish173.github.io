@@ -30,15 +30,13 @@ const TimelineItem: FC<{ item: Experience; index: number }> = ({
         </div>
         <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
           <h3 className="text-gradient">{item.date}</h3>
-          <h3 className="text-2xl md:text-3xl text-white">{item.title}</h3>
-          <h3 className="text-xl md:text-2xl text-neutral-500">{item.job}</h3>
+          <h3 className="text-2xl md:text-3xl text-white">{item.company}</h3>
         </div>
       </div>
       <div className="relative w-full pl-20 pr-4 md:pl-4">
         <div className="block mb-4 text-2xl font-bold text-left text-neutral-300 md:hidden">
           <h3 className="text-gradient text-base mb-1">{item.date}</h3>
-          <h3 className="text-xl">{item.title}</h3>
-          <h3 className="text-base text-neutral-500">{item.job}</h3>
+          <h3 className="text-xl">{item.company}</h3>
         </div>
         <div className="space-y-3">
           {item.contents.map((content, contentIndex) => (

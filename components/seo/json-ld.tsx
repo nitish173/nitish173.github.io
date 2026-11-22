@@ -13,7 +13,7 @@ import {
   HERO_ROLE,
 } from "@/constants/hero-constants";
 import { SERVICES } from "@/constants/services-constants";
-import { SKILL_CHIPS } from "@/constants/skills-constants";
+import { KNOWS_ABOUT } from "@/constants/skills-constants";
 
 const [city, country] = HERO_LOCATION.split(",").map((part) => part.trim());
 
@@ -31,7 +31,7 @@ const person = {
     addressLocality: city,
     addressCountry: country,
   },
-  knowsAbout: SKILL_CHIPS,
+  knowsAbout: KNOWS_ABOUT,
   sameAs: SOCIAL_PROFILES,
 };
 
