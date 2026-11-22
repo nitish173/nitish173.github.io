@@ -2,12 +2,14 @@
 
 import { Suspense, useRef, type FC } from "react";
 import { Canvas, useFrame, type RootState } from "@react-three/fiber";
-import { Float } from "@react-three/drei";
+import { Float, useGLTF } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
-import { Astronaut } from "@/components/portfolio/astronaut";
+import { HeroModel } from "@/components/portfolio/hero-model";
 import { Loader } from "@/components/portfolio/loader";
 import { useSceneActive } from "@/hooks/use-scene-active";
+import { HERO_MODEL_URL } from "@/constants/portfolio-constants";
+import { asset } from "@/helpers/asset-helpers";
 
 const Rig: FC = () => {
   useFrame((state: RootState, delta: number) => {
@@ -37,10 +39,19 @@ export const HeroScene: FC = () => {
         frameloop={active ? "always" : "never"}
       >
         <Suspense fallback={<Loader />}>
-          <Float>
-            <Astronaut
-              scale={isMobile ? 0.23 : undefined}
-              position={isMobile ? [0, -1.5, 0] : undefined}
+          <ambientLight intensity={1.6} />
+          <directionalLight position={[4, 6, 5]} intensity={2.4} />
+          <directionalLight
+            position={[-5, 2, -3]}
+            intensity={0.8}
+            color="#8b5cf6"
+          />
+          <Float speed={1.2} rotationIntensity={0.35} floatIntensity={0.9}>
+            <HeroModel
+              url={HERO_MODEL_URL}
+              targetHeight={isMobile ? 1.25 : 2.25}
+              position={isMobile ? [0, -1.6, 0] : [1.15, -0.7, 0]}
+              rotationY={-0.35}
             />
           </Float>
           <Rig />
@@ -49,3 +60,5 @@ export const HeroScene: FC = () => {
     </figure>
   );
 };
+
+useGLTF.preload(asset(HERO_MODEL_URL));

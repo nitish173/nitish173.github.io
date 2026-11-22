@@ -86,8 +86,10 @@ export interface TimelineProps {
   data: Experience[];
 }
 
-export interface AstronautProps {
-  scale?: number;
+export interface HeroModelProps {
+  url: string;
+  targetHeight?: number;
+  rotationY?: number;
   position?: [number, number, number];
 }
 

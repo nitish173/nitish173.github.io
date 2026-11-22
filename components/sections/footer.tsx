@@ -4,6 +4,7 @@ import { useRef, type FC } from "react";
 import { motion, useInView } from "motion/react";
 import {
   CONTACT_EMAIL,
+  HERO_MODEL_CREDIT,
   HERO_NAME,
   MY_SOCIALS,
 } from "@/constants/portfolio-constants";
@@ -77,6 +78,27 @@ export const Footer: FC = () => {
             <span>·</span>
             <span>All rights reserved.</span>
           </div>
+          <p className="text-[11px] text-neutral-500 md:text-right">
+            3D model:{" "}
+            <a
+              href={HERO_MODEL_CREDIT.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-neutral-400 transition-colors"
+            >
+              {HERO_MODEL_CREDIT.name}
+            </a>{" "}
+            by {HERO_MODEL_CREDIT.author}, generated with{" "}
+            {HERO_MODEL_CREDIT.generator} ·{" "}
+            <a
+              href={HERO_MODEL_CREDIT.licenseUrl}
+              target="_blank"
+              rel="license noopener noreferrer"
+              className="hover:text-neutral-400 transition-colors"
+            >
+              {HERO_MODEL_CREDIT.license}
+            </a>
+          </p>
         </div>
       </motion.div>
 

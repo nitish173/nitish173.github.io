@@ -2,6 +2,18 @@ import { type Stat } from "@/types/portfolio-types";
 
 export const HERO_NAME = "Nitish Kumar";
 
+export const HERO_MODEL_URL = "/models/adv_boy.glb";
+
+export const HERO_MODEL_CREDIT = {
+  name: "Adventurer Boy",
+  author: "VoxelVidal",
+  generator: "Sloyd",
+  license: "CC BY 4.0",
+  licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+  sourceUrl:
+    "https://www.sloyd.ai/free-3d-models/model/adventurer-boy-0va31bxo",
+} as const;
+
 export const HERO_ROLE = "Senior Software Engineer";
 
 export const HERO_LOCATION = "Bangalore, India";
