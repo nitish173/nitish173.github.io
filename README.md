@@ -59,12 +59,12 @@ Two blocks of copy are inline in components rather than constants: the About bio
   images under `public/projects/` and set `image` in `constants/projects-constants.ts` to use a
   screenshot instead.
 
-## Contact form
+## Contact
 
-There is no backend. `hooks/use-contact-form.ts` builds a `mailto:` link pre-filled with the name,
-email, message and "what is this about" choice, then hands off to your mail client. Nothing is
-stored or sent to a third party. To collect submissions instead, swap that function for a request to
-a static form service (Formspree, Web3Forms) — the endpoint is the only thing that has to change.
+There is no backend and no contact form. The contact section is a direct `mailto:` call to action
+built from `CONTACT_EMAIL` in `constants/social-constants.ts`, plus links to your social profiles —
+nothing is submitted, stored or sent to a third party. If you ever want a form, a static form
+service (Formspree, Web3Forms) can be added client-side without a backend.
 
 ## Deploy to GitHub Pages
 

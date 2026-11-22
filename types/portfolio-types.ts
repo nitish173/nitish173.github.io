@@ -56,11 +56,6 @@ export interface ProjectDetailsProps extends Project {
   closeModal: () => void;
 }
 
-export interface AlertProps {
-  type: "success" | "danger";
-  text: string;
-}
-
 export interface FlipWordsProps {
   words: string[];
   duration?: number;

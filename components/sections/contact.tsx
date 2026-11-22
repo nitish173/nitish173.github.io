@@ -4,7 +4,6 @@ import { type FC } from "react";
 import { Particles } from "@/components/portfolio/particles";
 import { useInViewOnce } from "@/hooks/use-in-view-once";
 import { ContactDetails } from "@/components/contact/contact-details";
-import { ContactForm } from "@/components/contact/contact-form";
 
 export const Contact: FC = () => {
   const [particlesRef, particlesInView] = useInViewOnce<HTMLDivElement>();
@@ -31,10 +30,7 @@ export const Contact: FC = () => {
         <div className="absolute bottom-20 right-1/4 h-64 w-64 rounded-full bg-coral/15 blur-[140px]" />
       </div>
 
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-12">
-        <ContactDetails />
-        <ContactForm />
-      </div>
+      <ContactDetails />
     </section>
   );
 };
