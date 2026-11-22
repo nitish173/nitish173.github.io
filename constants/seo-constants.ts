@@ -2,7 +2,7 @@ import { HERO_LOCATION, HERO_NAME, HERO_ROLE } from "./hero-constants";
 import { CONTACT_EMAIL, MY_SOCIALS } from "./social-constants";
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://nitish173.github.io"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://kumarnitish.com"
 ).replace(/\/$/, "");
 
 export const absoluteUrl = (path: string) =>

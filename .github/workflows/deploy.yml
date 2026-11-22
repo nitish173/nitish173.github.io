@@ -27,15 +27,17 @@ jobs:
 
       - run: npm ci
 
+      # Resolve the Pages URL before building so the canonical URL and asset
+      # prefix follow the configured domain automatically.
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build static site
         env:
-          # Set these as repository variables (Settings > Secrets and variables
-          # > Actions > Variables) or hardcode them here.
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
-          NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: npm run build
-
-      - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:

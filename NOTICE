@@ -5,9 +5,10 @@ The MIT license in LICENSE covers the SOURCE CODE of this project only.
 
 Still bundled after this project was customised:
 
-  * public/models/astronaut.glb — third-party 3D work sourced from Sketchfab.
-    It carries its own license and attribution requirement. Replace it or
-    verify its terms before publishing.
+  * public/models/adv_boy.glb — "Adventurer Boy" by VoxelVidal, generated
+    with Sloyd. Licensed under CC BY 4.0
+    (https://creativecommons.org/licenses/by/4.0/). Attribution is included
+    in the site footer.
 
   * Brand marks in public/assets/logos/ (React, Tailwind CSS, JavaScript)
     belong to their respective owners.

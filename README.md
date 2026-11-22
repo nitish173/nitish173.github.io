@@ -48,7 +48,7 @@ Two blocks of copy are inline in components rather than constants: the About bio
 
 ### Known placeholders
 
-- `constants/seo-constants.ts` — `SITE_URL` defaults to `https://nitish173.github.io`. Override it with
+- `constants/seo-constants.ts` — `SITE_URL` defaults to `https://kumarnitish.com`. Override it with
   `NEXT_PUBLIC_SITE_URL`, and set `NEXT_PUBLIC_BASE_PATH` if the site is served from a `/<repo>` path.
 - Testimonials — the template's fictional reviews were removed. `REVIEWS` is empty and the section is
   not rendered; add real quotes and re-enable `<Testimonial />` in `components/portfolio/home-page.tsx`.
@@ -72,22 +72,34 @@ with the official Pages actions.
 
 1. Push this project to a GitHub repository.
 2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
-3. In **Settings → Secrets and variables → Actions → Variables**, add:
+3. At your DNS provider, point the domain at GitHub Pages:
 
-   | Variable | Value |
-   | --- | --- |
-   | `NEXT_PUBLIC_SITE_URL` | Final URL, e.g. `https://nitish173.github.io` or `https://nitish173.github.io/<repo>` |
-   | `NEXT_PUBLIC_BASE_PATH` | `/<repo>` **only** for project pages. Leave empty for `<user>.github.io` or a custom domain |
+   | Type | Name | Value |
+   | --- | --- | --- |
+   | `A` | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
+   | `AAAA` | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+   | `CNAME` | `www` | `nitish173.github.io` |
 
-4. Push to `main` and watch the workflow run.
+   Remove any conflicting parking, redirect or old `A`/`CNAME` records for `@` and `www`.
+   The four `A` records are required; `AAAA` records add IPv6 support.
+4. In **Settings → Pages → Custom domain**, enter `kumarnitish.com` and click **Save**.
+   With a custom Actions workflow, no `public/CNAME` file is needed — GitHub ignores it and
+   uses this setting as the source of truth.
+5. Wait for the DNS check to pass, then enable **Enforce HTTPS** on the same Pages settings page.
+6. Push to `main` (or re-run the workflow) and watch it deploy.
+
+The workflow runs `actions/configure-pages` before the build and feeds its `base_url` and
+`base_path` outputs to Next.js, so the canonical/OG URLs and asset prefix follow the domain
+configured in **Settings → Pages** automatically. For a project page, the same workflow derives
+the `/<repo>` base path; no repository variables are required.
 
 ### URL shapes
 
 | Hosting | Repository name | `NEXT_PUBLIC_BASE_PATH` |
 | --- | --- | --- |
 | User/org site | `<user>.github.io` | *(empty)* |
-| Project site | any, e.g. `portfolio` | `/portfolio` |
-| Custom domain | any | *(empty)* — add a `public/CNAME` file with the domain |
+| Project site | any, e.g. `portfolio` | `/<repo>` (derived from Pages) |
+| Custom domain | any | *(empty)* — set the domain in **Settings → Pages** |
 
 `next.config.ts` applies `basePath`/`assetPrefix`, `trailingSlash`, `images.unoptimized`, and
 `output: "export"`. Internal asset URLs in raw `<img>` tags and the GLB model are prefixed through
@@ -101,6 +113,7 @@ static export requires. `public/.nojekyll` keeps GitHub Pages from running Jekyl
 Source code is MIT licensed — see [LICENSE](LICENSE). Built on
 [HasnainIrfan/3d-portfolio](https://github.com/HasnainIrfan/3d-portfolio).
 
-The bundled `public/models/astronaut.glb` is third-party work from Sketchfab with its own license and
-attribution terms; replace it or verify those terms before publishing. Brand logos under
-`public/assets/logos/` belong to their respective owners. See [NOTICE](NOTICE).
+The bundled `public/models/adv_boy.glb` is **Adventurer Boy** by VoxelVidal, generated with Sloyd
+and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribution is shown
+in the site footer. Brand logos under `public/assets/logos/` belong to their respective owners.
+See [NOTICE](NOTICE).
