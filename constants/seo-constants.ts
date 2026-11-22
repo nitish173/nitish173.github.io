@@ -1,9 +1,12 @@
 import { HERO_LOCATION, HERO_NAME, HERO_ROLE } from "./hero-constants";
 import { CONTACT_EMAIL, MY_SOCIALS } from "./social-constants";
 
-export const SITE_URL = (
+const rawSiteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL || "https://kumarnitish.com"
 ).replace(/\/$/, "");
+
+// GitHub Pages can report an http:// base URL until "Enforce HTTPS" is enabled.
+export const SITE_URL = rawSiteUrl.replace(/^http:\/\//i, "https://");
 
 export const absoluteUrl = (path: string) =>
   `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
