@@ -17,9 +17,8 @@ export const ContactDetails: FC = () => (
       <span className="text-gradient">Let&apos;s ship it.</span>
     </h2>
     <p className="mt-4 leading-relaxed text-neutral-400">
-      Whether you&apos;re launching something new, scaling what you have, or
-      rescuing a stuck project, drop me a line and I&apos;ll get back within 24
-      hours.
+      Whether you&apos;re hiring, shaping a frontend platform, or working on
+      something in trading and credit, drop me a line. I reply within 24 hours.
     </p>
 
     <div className="mt-8 space-y-4">

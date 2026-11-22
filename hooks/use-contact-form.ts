@@ -8,6 +8,7 @@ import {
   INITIAL_FORM_STATE,
   REQUIRED_FIELDS,
 } from "@/constants/contact-constants";
+import { CONTACT_EMAIL } from "@/constants/social-constants";
 import {
   type AlertState,
   type AlertType,
@@ -23,7 +24,6 @@ const HIDDEN_ALERT: AlertState = {
 
 export const useContactForm = () => {
   const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM_STATE);
-  const [isLoading, setIsLoading] = useState(false);
   const [alert, setAlert] = useState<AlertState>(HIDDEN_ALERT);
   const alertTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -45,36 +45,43 @@ export const useContactForm = () => {
     );
   }, []);
 
+  // Static site: there is no API route, so the form composes an email in the
+  // visitor's mail client. Works on GitHub Pages with no backend or secrets.
   const handleSubmit = useCallback(
-    async (event: FormEvent) => {
+    (event: FormEvent) => {
       event.preventDefault();
-      setIsLoading(true);
 
-      try {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        });
-        const data = (await response.json().catch(() => ({}))) as {
-          error?: string;
-        };
-
-        if (!response.ok) throw new Error(data.error || "Submission failed.");
-
-        setFormData(INITIAL_FORM_STATE);
-        showAlert("success", CONTACT_SUCCESS_MESSAGE);
-      } catch (error) {
-        showAlert(
-          "danger",
-          error instanceof Error ? error.message : CONTACT_ERROR_MESSAGE
-        );
-      } finally {
-        setIsLoading(false);
+      if (completion < 1) {
+        showAlert("danger", CONTACT_ERROR_MESSAGE);
+        return;
       }
+
+      const subject = encodeURIComponent(
+        `Portfolio enquiry from ${formData.name}`
+      );
+      const body = encodeURIComponent(
+        [
+          formData.message,
+          "",
+          `From: ${formData.name} <${formData.email}>`,
+          formData.budget ? `Interested in: ${formData.budget}` : "",
+        ]
+          .filter((line) => line !== "")
+          .join("\n")
+      );
+
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+      showAlert("success", CONTACT_SUCCESS_MESSAGE);
     },
-    [formData, showAlert]
+    [completion, formData, showAlert]
   );
 
-  return { formData, update, completion, isLoading, alert, handleSubmit };
+  return {
+    formData,
+    update,
+    completion,
+    isLoading: false,
+    alert,
+    handleSubmit,
+  };
 };

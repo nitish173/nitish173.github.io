@@ -2,6 +2,7 @@
 
 import { type FC } from "react";
 import { motion } from "motion/react";
+import { asset } from "@/helpers/asset-helpers";
 import { type ProjectDetailsProps } from "@/types/portfolio-types";
 
 export const ProjectDetails: FC<ProjectDetailsProps> = ({
@@ -29,7 +30,7 @@ export const ProjectDetails: FC<ProjectDetailsProps> = ({
           aria-label="Close"
           className="absolute z-10 p-2 rounded-full top-4 right-4 bg-white/10 hover:bg-white/20 transition-colors"
         >
-          <img src="/assets/close.svg" className="w-5 h-5" alt="" />
+          <img src={asset("/assets/close.svg")} className="w-5 h-5" alt="" />
         </button>
         <div className="relative h-48 md:h-56 bg-gradient-to-br from-storm to-indigo overflow-hidden rounded-t-3xl">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(122,87,219,0.4),transparent_55%)]" />

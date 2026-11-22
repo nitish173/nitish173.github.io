@@ -54,9 +54,9 @@ export const ContactForm: FC = () => {
 
         <div className="relative mb-7 flex items-end justify-between gap-6">
           <div>
-            <p className="text-eyebrow">Place an order</p>
+            <p className="text-eyebrow">Get in touch</p>
             <h3 className="mt-1 text-xl font-bold md:text-2xl">
-              Tell me about your project
+              Tell me what you&apos;re working on
             </h3>
           </div>
           <div className="flex items-center gap-3">

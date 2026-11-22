@@ -5,6 +5,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import { useMotionValue, useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 import { type AstronautProps } from "@/types/portfolio-types";
+import { asset } from "@/helpers/asset-helpers";
 import {
   type BufferGeometry,
   type Group,
@@ -15,9 +16,8 @@ import {
 
 export const Astronaut: FC<AstronautProps> = (props) => {
   const group = useRef<Group>(null);
-  const { nodes, materials, animations } = useGLTF(
-    "/models/astronaut.glb"
-  );
+  const modelUrl = asset("/models/astronaut.glb");
+  const { nodes, materials, animations } = useGLTF(modelUrl);
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -93,4 +93,4 @@ export const Astronaut: FC<AstronautProps> = (props) => {
   );
 };
 
-useGLTF.preload("/models/astronaut.glb");
+useGLTF.preload(asset("/models/astronaut.glb"));

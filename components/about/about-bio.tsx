@@ -26,22 +26,24 @@ export const AboutBio: FC = () => {
       </h3>
       <p className="text-base leading-relaxed text-neutral-300 md:text-lg">
         I&apos;m a Senior Software Engineer with{" "}
-        <span className="font-semibold text-white">5+ years</span> of experience
-        designing and shipping production-grade web and mobile products. I lead
-        with clean code, sharp problem-solving and a deep care for the user
-        experience.
+        <span className="font-semibold text-white">9+ years</span> of experience
+        building frontend platforms for fintech products. I lead with clean
+        architecture, clear interfaces and a deep care for the people who use
+        what we ship.
       </p>
       <p className="mt-4 leading-relaxed text-neutral-400">
-        From <span className="text-white">Front-End Developer</span> to{" "}
-        <span className="text-white">Junior Team Lead</span>, and now{" "}
-        <span className="text-white">Senior Software Engineer at Getweys</span>,
-        I&apos;ve led teams, mentored developers, and contributed to architecture
-        decisions that kept codebases scalable and maintainable.
+        At <span className="text-white">FalconX</span> since 2021, I led the
+        frontend for <span className="text-white">FalconX 360</span> from an
+        empty repository to a live trading and post-trade platform, then built
+        the credit team&apos;s UI from the ground up. Before that, at{" "}
+        <span className="text-white">ClearTax</span>, I architected GST
+        Reconciliation, shipped GST Desktop and led the consumer mobile app —
+        while mentoring engineers and setting the standards teams still work to.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
         <a href="#contact" className="btn-primary">
-          <span>Start a project</span>
+          <span>Start a conversation</span>
           <span aria-hidden>→</span>
         </a>
         <a href="#work" className="btn-ghost">

@@ -7,6 +7,7 @@ import {
   HERO_NAME,
   MY_SOCIALS,
 } from "@/constants/portfolio-constants";
+import { asset } from "@/helpers/asset-helpers";
 
 export const Footer: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -35,12 +36,13 @@ export const Footer: FC = () => {
         <div>
           <div className="flex items-center gap-2 text-base font-semibold tracking-tight text-white">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-royal to-coral text-white text-sm font-black">
-              H
+              {HERO_NAME.charAt(0)}
             </span>
             <span>{HERO_NAME}</span>
           </div>
           <p className="mt-3 text-sm text-neutral-400 max-w-sm">
-            Building scalable web & mobile products with care. Reach out at{" "}
+            Building frontend platforms for trading and credit products. Reach
+            out at{" "}
             <a
               href={`mailto:${CONTACT_EMAIL}`}
               className="text-white hover:text-coral transition-colors"
@@ -64,7 +66,7 @@ export const Footer: FC = () => {
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.08 }}
                 className="h-10 w-10 rounded-full border border-white/10 bg-white/[0.04] flex items-center justify-center hover:bg-white/[0.1] hover:border-white/30 transition-colors"
               >
-                <img src={social.icon} alt="" loading="lazy" decoding="async" className="w-4 h-4" />
+                <img src={asset(social.icon)} alt="" loading="lazy" decoding="async" className="w-4 h-4" />
               </motion.a>
             ))}
           </div>
@@ -84,7 +86,7 @@ export const Footer: FC = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="mt-16 text-center text-[20vw] md:text-[14rem] font-black leading-none text-white/[0.03] select-none"
       >
-        HASNAIN
+        {HERO_NAME.toUpperCase()}
       </motion.p>
     </footer>
   );

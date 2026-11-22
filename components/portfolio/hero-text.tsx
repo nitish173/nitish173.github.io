@@ -25,7 +25,7 @@ export const HeroText: FC = () => {
             <span className="relative rounded-full bg-mint h-2 w-2" />
           </span>
           <span className="text-xs tracking-[0.25em] uppercase text-neutral-300">
-            Available for new projects
+            Open to new opportunities
           </span>
         </div>
 
@@ -55,7 +55,7 @@ export const HeroText: FC = () => {
           className="reveal text-3xl lg:text-4xl font-semibold text-neutral-300"
           style={delay(0.33)}
         >
-          web & mobile products.
+          trading & credit platforms.
         </p>
 
         <div className="reveal flex flex-wrap gap-4 mt-10" style={delay(0.4)}>
@@ -79,7 +79,7 @@ export const HeroText: FC = () => {
             <span className="relative rounded-full bg-mint h-2 w-2" />
           </span>
           <span className="text-[10px] tracking-[0.25em] uppercase text-neutral-300">
-            Open for Work
+            Open to new work
           </span>
         </div>
 
@@ -108,7 +108,7 @@ export const HeroText: FC = () => {
           className="reveal text-3xl font-semibold text-neutral-300"
           style={delay(0.33)}
         >
-          web & mobile apps.
+          trading & credit products.
         </p>
 
         <div

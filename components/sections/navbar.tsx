@@ -11,6 +11,7 @@ import {
 } from "@/constants/navigation-constants";
 import { useActiveSection } from "@/hooks/use-active-section";
 import { useScrolled } from "@/hooks/use-scrolled";
+import { asset } from "@/helpers/asset-helpers";
 
 export const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,7 @@ export const Navbar: FC = () => {
             aria-expanded={isOpen}
           >
             <img
-              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
+              src={asset(isOpen ? "/assets/close.svg" : "/assets/menu.svg")}
               className="h-6 w-6"
               alt=""
             />

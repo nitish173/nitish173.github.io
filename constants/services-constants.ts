@@ -3,50 +3,50 @@ import { type Service } from "@/types/portfolio-types";
 export const SERVICES: Service[] = [
   {
     id: 1,
-    title: "Web Applications",
+    title: "Frontend Architecture",
     description:
-      "Production-grade Next.js & React apps that are fast, accessible, SEO-friendly and built to scale.",
+      "Design systems, module boundaries and shared platforms that let several product teams ship without stepping on each other.",
     icon: "/assets/logos/react.svg",
     bullets: [
-      "Landing pages & marketing sites",
-      "Dashboards & SaaS platforms",
-      "Server rendering & edge runtime",
+      "Design systems & component libraries",
+      "Shared platform services & micro-frontends",
+      "Performance budgets & Core Web Vitals",
     ],
   },
   {
     id: 2,
-    title: "Mobile Apps",
+    title: "Trading & Fintech Products",
     description:
-      "Cross-platform mobile apps with React Native + Expo, polished UI and native-grade performance.",
-    icon: "/assets/logos/react.svg",
+      "Data-dense trading, post-trade and credit workflows built for correctness, real-time data and round-the-clock reliability.",
+    icon: "/assets/logos/javascript.svg",
     bullets: [
-      "iOS & Android from one codebase",
-      "Push notifications & deep links",
-      "Offline-first patterns",
+      "Order, post-trade & credit flows",
+      "Real-time balances, cashflows & reporting",
+      "Exchange and custody integrations",
     ],
   },
   {
     id: 3,
-    title: "Admin Panels & CMS",
+    title: "0 → 1 Product Engineering",
     description:
-      "Powerful internal tools and admin portals with reusable components and role-based access.",
+      "Taking a product from an empty repository to production: architecture, implementation and the first real users.",
     icon: "/assets/logos/tailwindcss.svg",
     bullets: [
-      "Bespoke admin dashboards",
-      "Data tables, filters & exports",
-      "Auth, roles & permissions",
+      "Architecture & stack selection",
+      "End-to-end delivery ownership",
+      "Rewrites that keep the lights on",
     ],
   },
   {
     id: 4,
-    title: "APIs & Backends",
+    title: "Internal Tools & Developer Experience",
     description:
-      "Robust Node.js / Express APIs with SQL or MongoDB, cron jobs, and clean integration patterns.",
-    icon: "/assets/logos/javascript.svg",
+      "Tooling and platforms that shorten the loop between an idea and a shipped internal application.",
+    icon: "/assets/logos/react.svg",
     bullets: [
-      "REST API design & docs",
-      "Database modelling (SQL & NoSQL)",
-      "Background jobs & webhooks",
+      "Retool & internal dashboards",
+      "CI/CD, monitoring & alerts",
+      "Code quality, security & hiring standards",
     ],
   },
 ];

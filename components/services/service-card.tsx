@@ -8,6 +8,7 @@ import {
   STACK_SCALE_STEP,
 } from "@/constants/services-ui-constants";
 import { formatCounter, padIndex } from "@/helpers/format-helpers";
+import { asset } from "@/helpers/asset-helpers";
 import { type ServiceCardProps } from "@/types/services-types";
 import { ServiceBullets } from "./service-bullets";
 import { ServiceCta } from "./service-cta";
@@ -78,7 +79,7 @@ export const ServiceCard: FC<ServiceCardProps> = ({
               </span>
               <div className="absolute right-0 top-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-md md:h-20 md:w-20">
                 <img
-                  src={service.icon}
+                  src={asset(service.icon)}
                   alt=""
                   loading="lazy"
                   decoding="async"

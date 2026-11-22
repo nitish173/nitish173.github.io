@@ -12,17 +12,18 @@ export const INITIAL_FORM_STATE: ContactFormData = {
 
 export const REQUIRED_FIELDS: ContactField[] = ["name", "email", "message"];
 
+// The submission is a mailto: link, so this is what the visit is about rather
+// than a price bracket.
 export const BUDGET_OPTIONS = [
-  { value: "< $1k", label: "< $1k" },
-  { value: "$1k - $5k", label: "$1k - $5k" },
-  { value: "$5k - $15k", label: "$5k - $15k" },
-  { value: "$15k+", label: "$15k+" },
-  { value: "hourly", label: "Hourly" },
+  { value: "Full-time role", label: "Full-time role" },
+  { value: "Contract", label: "Contract" },
+  { value: "Freelance", label: "Freelance" },
+  { value: "Advisory", label: "Advisory" },
 ] as const;
 
 export const ALERT_DURATION = 5000;
 
 export const CONTACT_SUCCESS_MESSAGE =
-  "Message sent. I'll reply within 24 hours.";
+  "Your email app is opening with the message ready to send.";
 export const CONTACT_ERROR_MESSAGE =
-  "Something went wrong, please try again.";
+  "Something went wrong. Please email me directly instead.";

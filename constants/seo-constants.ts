@@ -1,8 +1,9 @@
 import { HERO_LOCATION, HERO_NAME, HERO_ROLE } from "./hero-constants";
 import { CONTACT_EMAIL, MY_SOCIALS } from "./social-constants";
 
+// TODO: set NEXT_PUBLIC_SITE_URL once the GitHub Pages URL is known.
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.hasnainirfan.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://nitish17312.github.io"
 ).replace(/\/$/, "");
 
 export const absoluteUrl = (path: string) =>
@@ -13,10 +14,10 @@ export const SITE_NAME = `${HERO_NAME} | ${HERO_ROLE}`;
 export const SITE_TITLE = `${HERO_NAME} | ${HERO_ROLE}`;
 
 export const SITE_DESCRIPTION =
-  "Senior Software Engineer with 5+ years building scalable web and mobile products in React, Next.js and Node.js. Open to freelance and contract work.";
+  "Senior Software Engineer at FalconX with 9+ years building frontend platforms for trading, credit and post-trade products with React, TypeScript and GraphQL.";
 
 export const SITE_TAGLINE =
-  "Scalable web & mobile products built with React, Next.js and Node.js.";
+  "Frontend platforms for trading, credit and post-trade products.";
 
 export const OG_IMAGE = "/og.jpg";
 export const OG_IMAGE_ALT = `${HERO_NAME}, ${HERO_ROLE} portfolio`;
@@ -38,40 +39,31 @@ export const SITE_KEYWORDS = [
   HERO_NAME,
   "Software Engineer",
   "Senior Software Engineer",
-  "Full Stack Developer",
-  "Next.js Developer",
+  "Frontend Engineer",
+  "Frontend Architect",
   "React Developer",
-  "React Native Developer",
-  "Node.js Developer",
-  "Frontend Developer",
-  "Web Developer Portfolio",
-  "Freelance Developer",
-  "Hire Software Engineer",
+  "TypeScript Developer",
+  "GraphQL",
+  "Fintech Engineer",
+  "Trading Platform",
+  "Post-Trade Systems",
+  "FalconX",
+  "ClearTax",
   HERO_LOCATION,
-  "Pakistan",
-  "Remote Developer",
+  "India",
+  "Remote Engineer",
 ];
 
-export const HOME_TITLE = `${HERO_NAME} | ${HERO_ROLE} & Next.js Developer`;
+export const HOME_TITLE = `${HERO_NAME} | ${HERO_ROLE} & Frontend Architect`;
 
 export const HOME_DESCRIPTION =
-  "Senior Software Engineer in Karachi building scalable web, mobile and API products with React, Next.js and Node.js. Open to freelance and contract work.";
-
-export const ADMIN_TITLE = "Contact submissions";
-
-export const ADMIN_DESCRIPTION =
-  "Private dashboard for contact form submissions. Not part of the public site.";
-
-export const ADMIN_LOGIN_TITLE = "Sign in";
-
-export const ADMIN_LOGIN_DESCRIPTION =
-  "Sign in to the private contact submissions dashboard.";
+  "Senior Software Engineer at FalconX in Bangalore. 9+ years building frontend platforms for trading, credit and post-trade products with React, TypeScript and GraphQL.";
 
 export const SITE_SECTIONS = [
   {
     name: "Home",
     hash: "#home",
-    description: `${HERO_NAME}, ${HERO_ROLE} building scalable web and mobile products.`,
+    description: `${HERO_NAME}, ${HERO_ROLE} building frontend platforms for trading and credit products.`,
   },
   {
     name: "About",
@@ -82,23 +74,23 @@ export const SITE_SECTIONS = [
     name: "Services",
     hash: "#services",
     description:
-      "Web applications, cross-platform mobile apps, APIs and technical consulting for startups and product teams.",
+      "Frontend architecture, trading and fintech products, 0 to 1 product engineering, and internal tooling.",
   },
   {
     name: "Work",
     hash: "#work",
     description:
-      "Selected projects and case studies built with React, Next.js, React Native and Node.js.",
+      "Selected projects: FalconX 360, the FalconX credit platform, and ClearTax's GST and mobile products.",
   },
   {
-    name: "Testimonials",
-    hash: "#testimonials",
-    description: `What clients and teammates say about working with ${HERO_NAME}.`,
+    name: "Experience",
+    hash: "#experience",
+    description: `Roles at FalconX, ClearTax and Bang The Table across ${HERO_NAME}'s career.`,
   },
   {
     name: "Contact",
     hash: "#contact",
-    description: `Get in touch with ${HERO_NAME} about freelance, contract or full-time work.`,
+    description: `Get in touch with ${HERO_NAME} about roles, contract work or advisory engagements.`,
   },
 ] as const;
 
