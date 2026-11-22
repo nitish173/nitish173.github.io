@@ -45,6 +45,8 @@ export const SITE_KEYWORDS = [
   "Python Developer",
   "AWS Developer",
   "Fintech Engineer",
+  "Backend Engineer",
+  "Observability",
   "Trading Platform",
   "Post-Trade Systems",
   "AI Agents",

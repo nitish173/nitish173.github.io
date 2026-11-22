@@ -10,6 +10,7 @@ export const EXPERIENCES: Experience[] = [
       "Oversaw the product's full lifecycle across several major rewrites, keeping live trading workflows running while the platform changed underneath them.",
       "Integrated Retool into internal operations, cutting the time to ship internal apps from weeks to days.",
       "Built the credit team's UI from the ground up, then led its re-architecture for the next platform generation.",
+      "Worked across the Python/AWS backend for credit: service architecture, observability, metrics and alerting.",
       "Led the subaccount pooling redesign and shipped a cashflow system that tracks every transaction across credit wallets, including custody interactions.",
       "Added exchange integrations such as Bybit into credit borrowing, plus support for collar and other custom loan structures.",
     ],

@@ -3,7 +3,8 @@
 // work, so these are phrased as contributions instead.
 export const SKILL_CHIPS = [
   "Frontend Architecture",
-  "Backend Services",
+  "Backend Architecture",
+  "Observability",
   "UI Engineering",
   "UX & Interaction",
   "Design Systems",
@@ -39,6 +40,8 @@ export const KNOWS_ABOUT = [
   "Puppeteer",
   "Design Systems",
   "Frontend Architecture",
+  "Backend Architecture",
+  "Observability",
   "UX Design",
   "LLM Applications",
   "RAG",

@@ -37,6 +37,7 @@ export const MY_PROJECTS: Project[] = [
       "Led the subaccount pooling redesign, changing how balances and exposure are modelled.",
       "Shipped a cashflow system that tracks every transaction across credit wallets, including custody interactions.",
       "Integrated exchanges such as Bybit into credit borrowing and added support for collar and custom loans.",
+      "Worked across the Python/AWS backend too — service architecture, metrics, traces and alerts for credit flows.",
     ],
     href: "https://www.falconx.io/services/financing",
     linkLabel: "View financing",
@@ -44,10 +45,12 @@ export const MY_PROJECTS: Project[] = [
     image: "",
     accent: "from-royal/40 to-lavender/10",
     tags: [
-      { id: 1, name: "TypeScript" },
-      { id: 2, name: "React" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "APIs" },
+      { id: 1, name: "React" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Python" },
+      { id: 4, name: "AWS" },
+      { id: 5, name: "Backend Architecture" },
+      { id: 6, name: "Observability" },
     ],
   },
   {
@@ -115,9 +118,8 @@ export const MY_PROJECTS: Project[] = [
     tags: [
       { id: 1, name: "React" },
       { id: 2, name: "TypeScript" },
-      { id: 3, name: "Python" },
-      { id: 4, name: "AWS" },
-      { id: 5, name: "Automation" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "Automation" },
     ],
   },
 ];
