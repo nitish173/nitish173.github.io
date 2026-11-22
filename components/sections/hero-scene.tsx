@@ -49,7 +49,7 @@ export const HeroScene: FC = () => {
           <Float speed={1.2} rotationIntensity={0.35} floatIntensity={0.9}>
             <HeroModel
               url={HERO_MODEL_URL}
-              targetHeight={isMobile ? 1.25 : 2.25}
+              targetHeight={isMobile ? 1.5 : 2.7}
               position={isMobile ? [0, -1.6, 0] : [1.15, -0.7, 0]}
               rotationY={-0.35}
             />
