@@ -6,6 +6,7 @@ import {
   FLIP_WORDS,
   HERO_NAME,
   HERO_ROLE,
+  HERO_SCOPE,
 } from "@/constants/portfolio-constants";
 
 const delay = (seconds: number): CSSProperties => ({
@@ -55,7 +56,7 @@ export const HeroText: FC = () => {
           className="reveal text-3xl lg:text-4xl font-semibold text-neutral-300"
           style={delay(0.33)}
         >
-          trading & credit platforms.
+          {HERO_SCOPE}
         </p>
 
         <div className="reveal flex flex-wrap gap-4 mt-10" style={delay(0.4)}>
@@ -108,7 +109,7 @@ export const HeroText: FC = () => {
           className="reveal text-3xl font-semibold text-neutral-300"
           style={delay(0.33)}
         >
-          trading & credit products.
+          {HERO_SCOPE}
         </p>
 
         <div

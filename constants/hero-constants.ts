@@ -19,9 +19,11 @@ export const HERO_ROLE = "Senior Software Engineer";
 export const HERO_LOCATION = "Bangalore, India";
 
 export const HERO_TAGLINE =
-  "I build frontend platforms for trading, credit and post-trade products — from the first architecture to the rewrites that keep them fast, reliable and extensible.";
+  "I build software end to end — from the API to the pixel — with the architecture and care that make it scalable, clear and durable.";
 
-export const FLIP_WORDS = ["Reliable", "Scalable", "Extensible"];
+export const FLIP_WORDS = ["Thoughtful", "Scalable", "Durable"];
+
+export const HERO_SCOPE = "software, from the API to the pixel.";
 
 export const STATS: Stat[] = [
   { value: "9+", label: "Years shipping software" },
