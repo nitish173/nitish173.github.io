@@ -72,8 +72,9 @@ export const MY_PROJECTS: Project[] = [
     tags: [
       { id: 1, name: "React" },
       { id: 2, name: "TypeScript" },
-      { id: 3, name: "Electron" },
-      { id: 4, name: "Architecture" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "Electron" },
+      { id: 5, name: "Architecture" },
     ],
   },
   {
@@ -118,8 +119,9 @@ export const MY_PROJECTS: Project[] = [
     tags: [
       { id: 1, name: "React" },
       { id: 2, name: "TypeScript" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "Automation" },
+      { id: 3, name: "Java" },
+      { id: 4, name: "Spring Boot" },
+      { id: 5, name: "Automation" },
     ],
   },
 ];
